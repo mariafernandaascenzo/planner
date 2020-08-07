@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+  background-color: rgba(255,255,255,1);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../images/background.jpg");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#container {
+  width: 240px;
+  height: 240px;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 2px rgba(255,255,255,0.6);
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+#error-msg {
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: top;
+}
+
+.login-field::placeholder {
+  color: rgba(0,0,0,0.5);
+}
+
+.login-field {
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 3px 5px 3px 5px;
+}
+
+#login-submit {
+  width: 40%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(80,80,80,1);
+  cursor: pointer;
+  outline: none;
+}
+
+#login-submit:hover{
+  background-color: rgba(50,50,50,1);
+}
